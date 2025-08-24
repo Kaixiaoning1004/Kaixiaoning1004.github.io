@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>逸轩百宝箱官方网站</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+        
+        html, body {
+            height: 100%;
+            overflow-x: hidden;
+        }
+        
+        body {
+            background: url(img/bg.jpg) no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .content {
+            max-width: 900px;
+            width: 100%;
+            min-height: 500px;
+            border-radius: 10px;
+            background-color: transparent;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            transition: all 1.0s;
+        }
+        
+        .content:hover {
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.52);
+        }
+        
+        .content img {
+            max-width: 200px;
+            width: 40%;
+            height: auto;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            margin: 0 5%;
+            object-fit: cover;
+        }
+        
+        .content_r {
+            flex: 1;
+            padding: 5%;
+        }
+        
+        .content_l {
+            text-align: center;
+        }
+        
+        .content_l h2 {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .cc, .color_1, .deeppink {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            margin-top: 10px;
+        }
+        
+        .en {
+            font-size: clamp(0.75rem, 2vw, 0.9rem);
+        }
+        
+        .cc { color: #00b359; }
+        .color_1 { color: #0099cc; }
+        .deeppink { color: #ff69b4; }
+        
+        /* 关键修复：按钮组强制单行显示 */
+        .link {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap; /* 强制不换行 */
+            overflow-x: auto; /* 允许水平滚动 */
+            -webkit-overflow-scrolling: touch; /* 平滑滚动 */
+            padding-bottom: 10px; /* 滚动条空间 */
+            scrollbar-width: none; /* 隐藏滚动条 */
+        }
+        
+        .link::-webkit-scrollbar {
+            display: none; /* 隐藏Webkit滚动条 */
+        }
+        
+        .link a {
+            flex: 0 0 auto; /* 禁止伸缩 */
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 80px; /* 最小宽度 */
+            width: auto;
+            padding: 0 15px; /* 缩小左右内边距 */
+            height: 40px; /* 缩小高度 */
+            margin: 0 5px; /* 缩小间距 */
+            color: #fff;
+            font-size: 12px; /* 缩小字体 */
+            line-height: 1.2;
+            text-align: center;
+            border-radius: 5px;
+            transition: all 0.3s;
+            background: linear-gradient(to right, #00caff, #ffbadd);
+            white-space: nowrap;
+        }
+        
+        .link a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* 移动端优化 */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                padding: 15% 5%;
+                min-height: auto;
+            }
+            
+            .content img {
+                width: 45%;
+                margin: 0 auto 15px;
+            }
+            
+            .link {
+                justify-content: flex-start; /* 左对齐保证单行 */
+            }
+            
+            /* 进一步缩小移动端按钮 */
+            .link a {
+                min-width: 70px;
+                height: 35px;
+                padding: 0 8px;
+                font-size: 10px;
+                margin: 0 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="content_r clearfix">
+            <div class="content_l clearfix">
+                <h2>欢迎来到 逸轩百宝箱官方网站</h2>
+                <p class="cc">瑞凯数动逸轩科技工作室</p>
+                <p class="cc en">Rui kai Shu dong yi Xuan technology studio</p>
+                <br>
+                <p class="color_1">我希望和你并排站在一起，看每个黄昏日落。</p>
+                <p class="color_1 en">I hope to stand side by side with you and watch every sunset.</p>
+                <br>
+                <p class="deeppink">我独自说的对白，静候彼岸花的盛开</p>
+                <p class="deeppink en">I said the dialogue alone, waiting for the flowers on the other side to bloom.</p>
+                <div class="link">
+                    <a href="https://lz.qaiu.top/parser?url=https://www.123684.com/s/Zf0qVv-APgiH">下载APP</a>
+                    <a href="https://work.weixin.qq.com/kfid/kfc2fa18cdfc0025d02">联系智能客服</a>
+                    <a href="https://weibo.com/u/7949335870">帮助和意见反馈</a>
+                    <a href="用户协议与隐私政策.html" target="_blank">用户许可及服务条款</a>
+                    <a href="https://qm.qq.com/q/z2PfzMVwqs" target="_blank">官方QQ群聊</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
